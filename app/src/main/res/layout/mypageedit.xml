@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mypage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/Next_TV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="마이페이지"
+
+            android:textColor="#7B7B7B"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mpok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/mypage_text_ok"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mypageback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/signup_back" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#98DB9E">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="107dp"
+                    android:background="@drawable/mypage_mom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:id="@+id/p_name"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="정원"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/p_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+
+                        android:textSize="15sp"
+                        android:text="서언서준맘"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/EditMypage1"
+
+                    android:textSize="11sp"
+                    android:text="  수정  "
+                    android:textColor="#67C570"
+
+                    android:padding="10dp"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/mypage_heart"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="107dp"
+                    android:background="@drawable/mypage_baby"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/b_name"
+
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="서언"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/mypage_boy"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:id="@+id/b_birth"
+
+                        android:textSize="15sp"
+                        android:text="00개월(000일)"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/EditMypage2"
+
+                    android:textSize="11sp"
+                    android:text="  수정  "
+                    android:textColor="#67C570"
+
+                    android:padding="10dp"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+
+                android:src="@drawable/signup_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="13dp"
+
+                android:text="아이정보"
+                android:textColor="#67C570"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/birth"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/signup_birth"
+            android:drawablePadding="12dp"
+
+            android:textSize="13sp"
+            android:hint="생년월일(yyyy/mm/dd)"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#67C570" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/signup_girlboy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:textSize="13sp"
+                android:text="성별"
+                android:textColor="#67C570" />
+
+            <Button
+                android:id="@+id/EditGirl"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/signup_girl" />
+
+            <Button
+                android:id="@+id/EditBoy"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="23dp"
+                android:background="@drawable/signup_boy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/signup_worry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="13sp"
+                android:text="아이 고민"
+                android:textColor="#67C570" />
+
+            <Button
+                android:id="@+id/EditNo"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/signup_no" />
+
+            <Button
+                android:id="@+id/EditAllergy"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/signup_allergy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/EditAtopy"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="68dp"
+                android:background="@drawable/signup_atopy" />
+
+            <Button
+                android:id="@+id/EditBowel"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="23dp"
+                android:background="@drawable/signup_bowel" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

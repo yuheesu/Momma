@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mypage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/Next_TV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+
+            android:text="마이페이지"
+            android:textSize="16sp"
+            android:textColor="#7B7B7B"
+
+            android:background="#FAFAFA"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="290dp"
+            android:paddingBottom="4dp"
+            android:id="@+id/mypage_logout"
+            android:src="@drawable/mypage_logout" />
+
+        <ImageView
+
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+
+            android:src="@drawable/signup_back"
+            android:id="@+id/mpback" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:background="#98DB9E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_BT"
+            android:background="@drawable/mypage_edit"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="107dp"
+                    android:background="@drawable/mypage_mom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:id="@+id/p_name"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="정원"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/p_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+
+                        android:textSize="15sp"
+                        android:textStyle="italic"
+                        android:text="서언서준맘"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/mypage_heart"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="107dp"
+                    android:background="@drawable/mypage_baby"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/b_name"
+
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="서언"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/mypage_boy"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:id="@+id/b_birth"
+
+                        android:textSize="15sp"
+                        android:textStyle="italic"
+                        android:text="00개월(000일)"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="210dp"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/mpnoworry"
+                android:visibility="invisible"
+                android:src="@drawable/mypage_noworry"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/mypage_atopy"
+                android:visibility="invisible"
+                android:id="@+id/mpworry2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:id="@+id/mpworry3"
+                android:visibility="invisible"
+                android:src="@drawable/mypage_bowel"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mypage_allergy"
+                android:visibility="invisible"
+                android:id="@+id/mpworry1"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="33dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signup_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="13dp"
+
+                android:text="내 리뷰"
+                android:textSize="17dp"
+                android:textColor="#67C570"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/recycleview_Myreview" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signup_line"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+
+                android:text="즐겨찾는 제품"
+                android:textSize="17dp"
+                android:textColor="#67C570"
+                android:textStyle="bold"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/recycleview_Favorite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
